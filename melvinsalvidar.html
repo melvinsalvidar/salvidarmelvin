@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melvin Salvidar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 75px;
+            padding-bottom: 75px;
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f8f8;
+        }
+        strong{
+            color: #0B2B26;
+        }
+        /* Navigation Bar */
+        .navigation-wrapper {
+            background-color: #0B2B26;
+            padding: 15px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 10px;
+        }
+
+        .buttonmain {
+            background-color: #B7BF96;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;box-shadow: 0px 10px 13px -7px #FFFFFF, 5px 5px 15px 5px rgba(250, 250, 250, 0);
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .buttonmain:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .buttonmain a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main Containers */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #E4E4DC;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .containerbottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: px;
+    background-color: #0B2B26;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+    margin: 0;
+}
+
+
+        .firstcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        .mypic img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            animation: zoomIn 2s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .firstparagraph {
+            padding-left: 20px;
+            flex: 1;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .secondcontainer h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Social Media Buttons */
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 12px;
+            color: white;
+            background-color: #0B2B26;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+            background-color: #B7BF96;
+        }
+
+        /* Specific colors for platforms */
+        .fb {
+            background-color: #3b5998;
+        }
+
+        .ig {
+            background: radial-gradient(circle, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        .gh {
+            background-color: #333;
+        }
+
+        .dc {
+            background-color: #7289da;
+        }
+
+        .wa {
+            background-color: #25D366;
+        }
+
+        .vb {
+            background-color: #8B39C3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navigation-wrapper">
+        <div class="navigation">
+            <button class="buttonmain"><a href="portfolio.html">Home</a></button>
+            <button class="buttonmain"><a href="projects.html">Sample Projects</a></button>
+            <button class="buttonmain"><a href="education.html">Education</a></button>
+            <button class="buttonmain"><a href="work.html">Work Experience</a></button>
+            <button class="buttonmain"><a href="contact.html">Contact</a></button>
+        </div>
+    </div>
+
+    <!-- First Container -->
+    <div class="container firstcontainer">
+        <div class="mypic">
+            <img src="mypic.jpg" alt="Melvin's Picture">
+        </div>
+        <div class="firstparagraph">
+            <p>
+                Hi, I'm <strong>Melvin Salvidar</strong>, a dedicated professional with over <strong>10 years of experience</strong> in the <strong>real estate industry</strong>. Throughout my career, I have developed strong skills in sales, client relationships, and problem-solving, always aiming to deliver the best results for my clients.
+            </p>
+            <p>
+                Now, I'm on an exciting journey to <strong>expand my expertise</strong> in the world of <strong>technology</strong>. I'm pursuing new skills in fields like <strong>data science</strong>, <strong>software development</strong>, and <strong>automation</strong>.
+            </p>
+        </div>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container secondcontainer">
+        <h3>SKILLS TO PURSUE</h3>
+        <ul>
+            <li><strong>Excel and Google Sheet</strong>: Advanced techniques for data analysis and automation.</li>
+            <li><strong>Data Science</strong>: Harnessing data to make informed decisions and solve complex problems.</li>
+            <li><strong>C#, C++, Java</strong>: Exploring object-oriented programming and software design.</li>
+            <li><strong>JavaScript and Node.js</strong>: Building dynamic, scalable applications.</li>
+            <li><strong>Python</strong>: A versatile tool for AI, machine learning, and automation.</li>
+            <li><strong>R</strong>: Diving deep into statistical analysis and data visualization.</li>
+            <li><strong>Swift</strong>: Developing mobile applications for iOS.</li>
+            <li><strong>SQL</strong>: Mastering database management and querying.</li>
+        </ul>
+        <p>
+            I am excited to share my experiences, projects, and ideas with you as I continue to evolve both personally and professionally. This website serves as a platform to showcase my journey, skills, and projects as I explore the vast and ever-changing tech world.
+        </p>
+        <p>Feel free to reach out, collaborate, or just learn more about what I'm up to!</p>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="containerbottom">
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/melvin.salvidar" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com" target="_blank" class="social-icon gh"><i class="fab fa-github"></i></a>
+            <a href="https://discord.com" target="_blank" class="social-icon dc"><i class="fab fa-discord"></i></a>
+            <a href="https://www.whatsapp.com" target="_blank" class="social-icon wa"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.viber.com" target="_blank" class="social-icon vb"><i class="fas fa-phone"></i></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
